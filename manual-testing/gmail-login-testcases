@@ -1,0 +1,197 @@
+TEST CASES - GMAIL LOGIN
+========================
+Tester: Abhay Sharma
+Date: 21-05-2026
+
+TC01 - Valid Login
+------------------
+Description: Login with correct email and password
+Steps:
+1. Open browser and go to gmail.com
+2. Enter valid email
+3. Click Next
+4. Enter valid password
+5. Click Next
+Expected Result: User should login successfully and see inbox
+Status: Pass
+
+TC02 - Invalid Email
+--------------------
+Description: Login with wrong email format
+Steps:
+1. Open browser and go to gmail.com
+2. Enter invalid email (eg: abhay@)
+3. Click Next
+Expected Result: Error message should appear "Enter a valid email"
+Status: Pass
+
+TC03 - Wrong Password
+---------------------
+Description: Login with correct email but wrong password
+Steps:
+1. Open browser and go to gmail.com
+2. Enter valid email
+3. Click Next
+4. Enter wrong password
+5. Click Next
+Expected Result: Error message "Wrong password, try again"
+Status: Pass
+
+TC04 - Empty Email Field
+------------------------
+Description: Click next without entering email
+Steps:
+1. Open browser and go to gmail.com
+2. Leave email field empty
+3. Click Next
+Expected Result: Error message "Enter an email"
+Status: Pass
+
+TC05 - Empty Password Field
+---------------------------
+Description: Click next without entering password
+Steps:
+1. Open browser and go to gmail.com
+2. Enter valid email
+3. Click Next
+4. Leave password empty
+5. Click Next
+Expected Result: Error message "Enter a password"
+Status: Pass
+
+TC06 - Forgot Password Link
+----------------------------
+Description: Check forgot password works
+Steps:
+1. Open browser and go to gmail.com
+2. Enter valid email
+3. Click Next
+4. Click Forgot Password
+Expected Result: Password recovery page should open
+Status: Pass
+
+TC07 - Show Password Toggle
+----------------------------
+Description: Check show password button works
+Steps:
+1. Open browser and go to gmail.com
+2. Enter valid email
+3. Click Next
+4. Enter password
+5. Click show password icon
+Expected Result: Password should become visible
+Status: Pass
+
+TC08 - Valid Login with Phone Number
+-------------------------------------
+Description: Login using phone number instead of email
+Steps:
+1. Open browser and go to gmail.com
+2. Enter valid phone number linked to account
+3. Click Next
+4. Enter valid password
+5. Click Next
+Expected Result: User should login successfully and see inbox
+Status: Pass
+
+TC09 - Case Sensitivity in Email
+----------------------------------
+Description: Check if email is case sensitive
+Steps:
+1. Open browser and go to gmail.com
+2. Enter email in uppercase (eg: ABHAY@GMAIL.COM)
+3. Click Next
+4. Enter valid password
+5. Click Next
+Expected Result: User should login successfully (email is not case sensitive)
+Status: Pass
+
+TC10 - Case Sensitivity in Password
+-------------------------------------
+Description: Check if password is case sensitive
+Steps:
+1. Open browser and go to gmail.com
+2. Enter valid email
+3. Click Next
+4. Enter password in wrong case (eg: PASS instead of pass)
+5. Click Next
+Expected Result: Error message "Wrong password, try again" (password is case sensitive)
+Status: Pass
+
+TC11 - Login with Spaces in Email
+-----------------------------------
+Description: Enter email with spaces
+Steps:
+1. Open browser and go to gmail.com
+2. Enter email with spaces (eg: abhay @gmail.com)
+3. Click Next
+Expected Result: Error message should appear "Enter a valid email"
+Status: Pass
+
+TC12 - Multiple Failed Login Attempts
+---------------------------------------
+Description: Check what happens after multiple wrong passwords
+Steps:
+1. Open browser and go to gmail.com
+2. Enter valid email
+3. Click Next
+4. Enter wrong password 5 times continuously
+Expected Result: Account should get temporarily locked or captcha should appear
+Status: Pass
+
+TC13 - Login with Saved Password
+----------------------------------
+Description: Check browser saved password works
+Steps:
+1. Open browser and go to gmail.com
+2. Click on email field
+3. Select saved email from browser suggestion
+4. Select saved password from browser suggestion
+5. Click Next
+Expected Result: User should login successfully
+Status: Pass
+
+TC14 - Login on Different Browsers
+------------------------------------
+Description: Check login works on Chrome, Firefox and Edge
+Steps:
+1. Open Chrome and login to gmail.com with valid credentials
+2. Open Firefox and login to gmail.com with valid credentials
+3. Open Edge and login to gmail.com with valid credentials
+Expected Result: Login should work successfully on all browsers
+Status: Pass
+
+TC15 - Stay Signed In
+-----------------------
+Description: Check if user stays logged in after closing browser
+Steps:
+1. Open browser and go to gmail.com
+2. Enter valid email and password
+3. Click Next
+4. Close the browser completely
+5. Reopen browser and go to gmail.com
+Expected Result: User should still be logged in
+Status: Pass
+
+TC16 - Login with Disabled Account
+------------------------------------
+Description: Check login with a disabled Google account
+Steps:
+1. Open browser and go to gmail.com
+2. Enter email of a disabled account
+3. Click Next
+4. Enter valid password
+5. Click Next
+Expected Result: Error message should appear saying account is disabled
+Status: Pass
+
+TC17 - Logout and Login Again
+-------------------------------
+Description: Check user can logout and login again successfully
+Steps:
+1. Login to gmail.com with valid credentiassls
+2. Click on profile picture (top right)
+3. Click Sign Out
+4. Login again with same credentials
+Expected Result: User should be able to logout and login again successfully
+Status: Pass
